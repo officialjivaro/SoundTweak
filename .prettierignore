@@ -1,0 +1,13 @@
+# Build artefacts
+dist
+docs
+coverage
+
+# Dependencies
+node_modules
+
+# FFmpeg binaries
+public/ffmpeg
+
+# Generated files
+*.log

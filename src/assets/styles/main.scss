@@ -1,0 +1,63 @@
+@use 'variables' as *;
+@use 'animations' as *;
+
+/* --- CSS Reset / Base ---------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $FONT_FAMILY;
+  font-size: $FONT_SIZE_BASE;
+  background: $BACKGROUND_MAIN;
+  color: $TEXT_COLOR;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* --- Global layout helpers ---------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: $SPACING_MD;
+}
+
+/* --- Utility classes ----------------------------------------------------- */
+.fade-enter-active,
+.fade-leave-active {
+  animation: fade-in 250ms ease-out;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

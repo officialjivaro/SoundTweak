@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.js    diff=javascript
+*.ts    diff=typescript
+*.vue   diff=vue
+*.scss  diff=css
+*.json  diff=json
+*.md    diff=markdown
+
+# Keep the FFmpeg binaries as‑is (no LF conversion, no diff)
+public/ffmpeg/* -text

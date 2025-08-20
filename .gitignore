@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# production build artefacts (generated — kept on gh‑pages branch only)
+dist
+coverage
+
+# local logs & system files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+
+# IDE / editor junk
+.vscode
+.idea
+*.sw?
